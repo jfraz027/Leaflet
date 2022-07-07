@@ -5,11 +5,7 @@ var queryUrl =
 
 // Perform a GET request to the query URL/
 d3.json(queryUrl).then(function (data) {
-  // Once we get a response, send the data.features object to the createFeatures function.
-  //createFeatures(data.features);
-  // });
-
-  // function createFeatures(earthquakeData) {
+   
   // Define a function that we want to run once for each feature in the features array.
   // Give each feature a popup that describes the place and time of the earthquake.
   function onEachFeature(feature, layer) {
